@@ -4,9 +4,11 @@ import {NumberListReplacer} from './number-list-replacer';
 export function executeFizzBuzz(number: number) {
 
     const fizBuzz = new NumberListReplacer();
+    
     fizBuzz.addRule(new FizzBuzzRule());
     fizBuzz.addRule(new FizzRule());
     fizBuzz.addRule(new BuzzRule());
+    
     const result = fizBuzz.generate(number);
     console.log(result);
   

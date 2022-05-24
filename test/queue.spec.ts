@@ -1,7 +1,7 @@
 import { expect, assert } from 'chai';
 import { Queue } from './queue';
 
-describe.only(Queue.name, () => {
+describe(Queue.name, () => {
 
     const ELEMENT = 'queue-element';
 

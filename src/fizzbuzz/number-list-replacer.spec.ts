@@ -6,7 +6,7 @@ import {NumberListReplacer} from './number-list-replacer';
 
 const fizzBuzz = new NumberListReplacer();
 
-beforeEach(() => {
+beforeEach(() => {    
     fizzBuzz.addRule(new FizzBuzzRule());
     fizzBuzz.addRule(new FizzRule());
     fizzBuzz.addRule(new BuzzRule());
@@ -43,7 +43,8 @@ describe(NumberListReplacer.name, () => {
         
             it('should return buzz', async () => {
                 
-                const expectedValue = fizzBuzz.getReplacement(numbers[2]);
+                const expectedValue = fizzBuzz.getReplacement(numbers[3]);
+        
                 const expectedResponse = 'Buzz';
 
                 expect(expectedValue).to.deep.equal(expectedResponse);
