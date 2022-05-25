@@ -1,8 +1,3 @@
-export interface QueueInterface {
+export interface QueueInterface {}
 
-}
-
-export class Queue implements QueueInterface {
-
-
-}
+export class Queue implements QueueInterface {}

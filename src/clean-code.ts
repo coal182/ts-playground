@@ -1,5 +1,4 @@
-export function giveMeTheFirstValueAvailable(){
-
+export function giveMeTheFirstValueAvailable(): void {
     const valorA = null;
     const valorB = null;
     const valorC = 'valorC';
@@ -7,5 +6,4 @@ export function giveMeTheFirstValueAvailable(){
     const valor = valorA ?? valorB ?? valorC;
 
     console.log(valor);
-
 }
