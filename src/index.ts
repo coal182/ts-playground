@@ -6,6 +6,11 @@ import {pipeExample} from './pipe';
 import {executeFizzBuzz} from './fizzbuzz/';
 import {subject} from './rxjs/subject';
 import {getPokemonsIds} from '../test/stub';
+import {StudentSignUpper} from './value-objects/application/sign-up/student-sign-upper';
+import {StudentPassword} from './value-objects/domain/student-password';
+import {StudentName} from './value-objects/domain/student-name';
+import {StudentId} from './value-objects/domain/student-id';
+import {v4 as uuid} from 'uuid';
 
 //arrayMethods();
 //promiseMethods();
@@ -13,8 +18,8 @@ import {getPokemonsIds} from '../test/stub';
 //spread();
 //executeFizzBuzz(100);
 //pipeExample();
-subject();
-
+//subject();
+/*
 const pokemons = getPokemonsIds(9)
     .then((pokemons) => {
         console.log(pokemons);
@@ -22,3 +27,10 @@ const pokemons = getPokemonsIds(9)
     .catch((err) => {
         console.log(err);
     });
+*/
+const id: string = uuid();
+const students = new StudentSignUpper(new StudentId('1'), new StudentName('Cristian'), new StudentPassword('123456'));
+
+students.students.forEach((student) => {
+    console.log(student.toPrimitives());
+});
