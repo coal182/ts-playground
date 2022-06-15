@@ -1,5 +1,6 @@
 import {promiseMethods} from './promises';
 import {arrayMethods} from './arrays';
+import {objectMethods} from './objects';
 import {giveMeTheFirstValueAvailable} from './clean-code';
 import {spread} from './spread';
 import {pipeExample} from './pipe';
@@ -13,6 +14,7 @@ import {StudentId} from './value-objects/domain/student-id';
 import {v4 as uuid} from 'uuid';
 
 //arrayMethods();
+objectMethods();
 //promiseMethods();
 //giveMeTheFirstValueAvailable();
 //spread();
@@ -29,7 +31,7 @@ const pokemons = getPokemonsIds(9)
     });
 */
 const id: string = uuid();
-const students = new StudentSignUpper(new StudentId('1'), new StudentName('Cristian'), new StudentPassword('123456'));
+const students = new StudentSignUpper(new StudentId(id), new StudentName('Cristian'), new StudentPassword('123456'));
 
 students.students.forEach((student) => {
     console.log(student.toPrimitives());
