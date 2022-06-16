@@ -1,6 +1,7 @@
 import {promiseMethods} from './promises';
 import {arrayMethods} from './arrays';
 import {objectMethods} from './objects';
+import {enumMethods} from './enums';
 import {lodashMethods} from './lodash';
 import {giveMeTheFirstValueAvailable} from './clean-code';
 import {spread} from './spread';
@@ -16,7 +17,8 @@ import {v4 as uuid} from 'uuid';
 
 //arrayMethods();
 //objectMethods();
-lodashMethods();
+enumMethods();
+//lodashMethods();
 //promiseMethods();
 //giveMeTheFirstValueAvailable();
 //spread();
