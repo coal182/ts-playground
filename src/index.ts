@@ -14,6 +14,7 @@ import {StudentPassword} from './value-objects/domain/student-password';
 import {StudentName} from './value-objects/domain/student-name';
 import {StudentId} from './value-objects/domain/student-id';
 import {v4 as uuid} from 'uuid';
+import {typesFunction} from './types-function';
 
 //arrayMethods();
 //objectMethods();
@@ -43,3 +44,5 @@ students.students.forEach((student) => {
     console.log(student.toPrimitives());
 });
 */
+
+typesFunction();
