@@ -18,8 +18,8 @@ import {typesFunction} from './types-function';
 
 //arrayMethods();
 //objectMethods();
-enumMethods();
-//lodashMethods();
+//enumMethods();
+lodashMethods();
 //promiseMethods();
 //giveMeTheFirstValueAvailable();
 //spread();
@@ -45,4 +45,4 @@ students.students.forEach((student) => {
 });
 */
 
-typesFunction();
+//typesFunction();

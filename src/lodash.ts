@@ -44,4 +44,7 @@ export function lodashMethods(): void {
         console.log('value:', value);
     });
     // => Logs 'a' then 'b' (iteration order is not guaranteed).
+
+    const intersection = _.intersection([0, 1, 2, 3], [0, 2, 4, 5]);
+    console.log('Intersection: ', intersection);
 }
