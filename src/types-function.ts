@@ -29,3 +29,7 @@ function getUnavailableHoursRange(from: number, to: number): Array<Hour> {
 export function typesFunction(): void {
     console.log(...getUnavailableHoursRange(20, 24));
 }
+
+interface returnAFunctionThatReturnsAFunction {
+    myFunction: (a: string, b: number) => () => string;
+}
