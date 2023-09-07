@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+
+//https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md
+
 type First<T extends Array<unknown>> = T extends [] ? never : T[0];
 
 /* _____________ Test Cases _____________ */

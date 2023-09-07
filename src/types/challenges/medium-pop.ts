@@ -1,4 +1,6 @@
-type Pop<T extends Array<any>> = T extends [...infer Head, unknown] ? Head : [];
+// https://github.com/type-challenges/type-challenges/tree/main/questions/00016-medium-pop
+
+type Pop<T extends Array<unknown>> = T extends [...infer Head, unknown] ? Head : [];
 
 type result = Pop<[3, 2, 1]>;
 
