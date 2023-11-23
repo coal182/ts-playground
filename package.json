@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev ./src/index.ts",
+    "dev": "ts-node-dev --ignore-watch node_modules ./src/index.ts",
     "build": "npm test && tsc",
     "lint": "eslint . --ext .ts --max-warnings=0",
     "lint-fix": "npm run lint -- --fix",
