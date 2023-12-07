@@ -1,4 +1,4 @@
-import { reduces } from './reduces';
+import { alphabetInvasionGame } from './rxjs/recipes/alphabet-invasion-game';
 
 //arrayMethods();
 //objectMethods();
@@ -10,7 +10,8 @@ import { reduces } from './reduces';
 //executeFizzBuzz(100);
 //pipeExample();
 //subject();
-reduces()
+//reduces()
+alphabetInvasionGame();
 /*
 const pokemons = getPokemonsIds(9)
     .then((pokemons) => {

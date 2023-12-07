@@ -1,7 +1,7 @@
 // https://github.com/type-challenges/type-challenges/blob/main/questions/00011-easy-tuple-to-object/README.md
 
 type TupleToObject<T extends ReadonlyArray<string | number | symbol>> = {
-    [key in T[number]]: key;
+  [key in T[number]]: key;
 };
 
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const;
@@ -14,14 +14,19 @@ const tupleMix = [1, '2', 3, '4', sym1] as const;
 type result = TupleToObject<typeof tuple>; // expected { 'tesla': 'tesla', 'model 3': 'model 3', 'model X': 'model X', 'model Y': 'model Y'}
 
 /* _____________ Test Cases _____________ */
-import type {Equal, Expect} from '@type-challenges/utils';
+import type { Equal, Expect } from '@type-challenges/utils';
 type cases = [
-    Expect<Equal<TupleToObject<typeof tuple>, {tesla: 'tesla'; 'model 3': 'model 3'; 'model X': 'model X'; 'model Y': 'model Y'}>>,
-    Expect<Equal<TupleToObject<typeof tupleNumber>, {1: 1; 2: 2; 3: 3; 4: 4}>>,
-    Expect<Equal<TupleToObject<typeof tupleSymbol>, {[sym1]: typeof sym1; [sym2]: typeof sym2}>>,
-    Expect<Equal<TupleToObject<typeof tupleMix>, {1: 1; '2': '2'; 3: 3; '4': '4'; [sym1]: typeof sym1}>>
+  Expect<
+    Equal<
+      TupleToObject<typeof tuple>,
+      { tesla: 'tesla'; 'model 3': 'model 3'; 'model X': 'model X'; 'model Y': 'model Y' }
+    >
+  >,
+  Expect<Equal<TupleToObject<typeof tupleNumber>, { 1: 1; 2: 2; 3: 3; 4: 4 }>>,
+  Expect<Equal<TupleToObject<typeof tupleSymbol>, { [sym1]: typeof sym1; [sym2]: typeof sym2 }>>,
+  Expect<Equal<TupleToObject<typeof tupleMix>, { 1: 1; '2': '2'; 3: 3; '4': '4'; [sym1]: typeof sym1 }>>
 ];
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-type error = TupleToObject<[[1, 2], {}]>;
+type error = TupleToObject<[[1, 2], Record<string, unknown>]>;

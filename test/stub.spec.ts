@@ -1,9 +1,12 @@
-import {expect} from 'chai';
+import { expect } from 'chai';
+
+import { Api } from '../src/shared/api';
+
+import { getPokemonsIds, PokemonListResponse } from './stub';
+
 //import {createSandbox} from 'sinon';
 /* eslint-disable */
 const sinon = require('sinon');
-import {Api} from '../src/shared/api';
-import {getPokemonsIds, PokemonListResponse, PokemonUrlObject} from './stub';
 
 const responseObject = {
     status: '201',
