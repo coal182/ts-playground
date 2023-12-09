@@ -3,6 +3,8 @@ type SantasList<
   U extends Array<string | number | boolean | any[]> | readonly [string, string]
 > = [...T, ...U];
 
+/* _____________ Test Cases _____________ */
+
 import { Expect, Equal } from 'type-testing';
 
 const bads = ['tommy', 'trash'] as const;
