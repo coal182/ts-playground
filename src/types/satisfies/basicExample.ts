@@ -1,3 +1,5 @@
+// Source: https://github.com/CodelyTV/awesome-typescript-examples/
+/* eslint-disable @typescript-eslint/no-unused-vars */
 type Route = { path: string; children?: Routes };
 type Routes = Record<string, Route>;
 
