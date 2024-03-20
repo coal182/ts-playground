@@ -11,7 +11,9 @@
     "resolveJsonModule": true,
     "noErrorTruncation": true, 
     "strictPropertyInitialization": false,
-    "useUnknownInCatchVariables": true
+    "useUnknownInCatchVariables": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
   },
   "include": [
     "src/**/*",

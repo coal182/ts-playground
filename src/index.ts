@@ -2,10 +2,10 @@
 //objectMethods();
 //enumMethods();
 
-import { promiseMethods } from './promises';
+import { thisMethods } from './this-methods/apply';
 
 //lodashMethods();
-promiseMethods();
+//promiseMethods();
 //giveMeTheFirstValueAvailable();
 //spread();
 //executeFizzBuzz(100);
@@ -33,3 +33,4 @@ students.students.forEach((student) => {
 */
 
 //typesFunction();
+thisMethods();
