@@ -1,17 +1,18 @@
-import { alphabetInvasionGame } from './rxjs/recipes/alphabet-invasion-game';
-
 //arrayMethods();
 //objectMethods();
 //enumMethods();
+
+import { promiseMethods } from './promises';
+
 //lodashMethods();
-//promiseMethods();
+promiseMethods();
 //giveMeTheFirstValueAvailable();
 //spread();
 //executeFizzBuzz(100);
 //pipeExample();
 //subject();
 //reduces()
-alphabetInvasionGame();
+//alphabetInvasionGame();
 /*
 const pokemons = getPokemonsIds(9)
     .then((pokemons) => {
