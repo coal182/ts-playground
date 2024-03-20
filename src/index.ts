@@ -2,7 +2,7 @@
 //objectMethods();
 //enumMethods();
 
-import { thisMethods } from './this-methods/apply';
+import { thisMethods } from './call-apply-bind';
 
 //lodashMethods();
 //promiseMethods();
